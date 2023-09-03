@@ -1,16 +1,38 @@
+<div class="container">
 <form class="form-signin" #loginForm="ngForm" (ngSubmit)="login(loginForm)" >
   <div class ="container-fluid">
-    <h2 class="form-signin-heading">login</h2>
-    <div *ngIf="invalidLogin" class="alert alert-danger">Invalid username or password</div>
+    <h2 >login</h2>
     <br>
-    <label for="username" class="sr-only">User name</label>
-    <input type="email" id="username" name="username" ngModel class="form-control" placeholder="User name" required autofocus>
+    <div *ngIf="invalidLogin" class="alert alert-danger">Invalid username or password
+    </div>
     <br>
-    <label for="password" class="sr-only">Password</label>
-    <input type="password" id="password" name="password" ngModel class="form-control" placeholder="password" required>
-    <button class="btn bth-lg btn-primary btn-block" type="submit">Submit</button>
+    <div class="userContainer">
+      <label for="username" >User name</label>
+      <br>
+
+      <input type="username" id="username" name="username" ngModel class="form-control"  required autofocus>
+      <a><i class="fa-solid fa-trash-can"></i></a>
+    </div>
+    <br>
+    <div class="passContainer">
+      <label for="password">Password</label>
+      <br>
+      <input type="password" id="password" name="password" ngModel class="form-control"  required>
+      <a><i class="fa-solid fa-trash-can"></i></a>
+    </div>
+
+
+  </div>
+  <br>
+<div class="Submit">
+  <button class="btn bth-lg btn-primary btn-block" type="submit">Submit</button>
+</div>
+  <br>
+  <div class="trashcan">
+    <a><i class="fa-solid fa-trash-can"></i></a>
   </div>
 
 
-
 </form>
+
+</div>

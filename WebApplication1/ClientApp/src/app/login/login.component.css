@@ -1,0 +1,32 @@
+.container{
+  padding: 3em;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  font-weight: inherit;
+}
+
+h2{
+  text-align: center;
+}
+
+.alert alert-danger{
+  text-align: left;
+  display: flex;
+  width: 100%;
+  padding-top: 100em;
+}
+
+form input[type="password"], form input[type="username"]
+{
+  width: 100%;
+  padding: 0.5em 0.3em;
+  margin-bottom: 0.5em;font-size: 0.9em;
+}
+
+.userContainer{
+  display: flex;
+}
