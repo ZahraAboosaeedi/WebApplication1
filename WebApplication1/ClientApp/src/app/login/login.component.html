@@ -1,21 +1,24 @@
-<div class="container">
+<!--<div class="container">-->
 <form class="form-signin" #loginForm="ngForm" (ngSubmit)="login(loginForm)" >
   <div class ="container-fluid">
     <h2 >login</h2>
     <br>
-    <div *ngIf="invalidLogin" class="alert alert-danger">Invalid username or password
-    </div>
+<!--    <div *ngIf="invalidLogin" class="alert alert-danger">Invalid username or password-->
+<!--    </div>-->
     <br>
     <div class="userContainer">
       <label for="username" >User name</label>
       <br>
-
+      <br>
       <input type="username" id="username" name="username" ngModel class="form-control"  required autofocus>
+    </div>
+    <div class="crashbin">
       <a><i class="fa-solid fa-trash-can"></i></a>
     </div>
     <br>
     <div class="passContainer">
       <label for="password">Password</label>
+      <br>
       <br>
       <input type="password" id="password" name="password" ngModel class="form-control"  required>
       <a><i class="fa-solid fa-trash-can"></i></a>
@@ -35,4 +38,4 @@
 
 </form>
 
-</div>
+<!--</div>-->
